@@ -1,6 +1,6 @@
 <template>
   <ParentLayout>
-    <Comment slot="page-bottom"/>
+    <!-- <Comment slot="page-bottom"/> -->
   </ParentLayout>
 </template>
 
