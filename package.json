@@ -20,5 +20,8 @@
   "homepage": "https://github.com/zlhunzzing/blog#readme",
   "devDependencies": {
     "vuepress": "^1.8.2"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security"
   }
 }
