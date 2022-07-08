@@ -1,6 +1,7 @@
 const fs = require("fs");
 
-const routes = ["html", "javascript"];
+const routes = ["html"];
+// const routes = ["html", "javascript"];
 
 const sidebar = routes.map((route) => ({
   title: route,
