@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const routes = ["html"];
+const routes = ["html", "think"];
 // const routes = ["html", "javascript"];
 
 const sidebar = routes.map((route) => ({
