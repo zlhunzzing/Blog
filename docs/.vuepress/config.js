@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const routes = ["history", "web", "html", "css", "cooperate", "think"];
+const routes = ["history", "web", "html", "css", "cooperate"];
 
 const sidebar = routes.map((route) => ({
   title: route,
