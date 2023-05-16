@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>BEM이란? | 김지훈 FE 블로그</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.57e4ead6.css" as="style"><link rel="preload" href="/blog/assets/js/app.8ea581b6.js" as="script"><link rel="preload" href="/blog/assets/js/8.4fb3aecf.js" as="script"><link rel="preload" href="/blog/assets/js/1.45109c56.js" as="script"><link rel="preload" href="/blog/assets/js/12.5f82ed44.js" as="script"><link rel="preload" href="/blog/assets/js/7.7dd6a3c5.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.86e8f897.js"><link rel="prefetch" href="/blog/assets/js/11.0a76f2a9.js"><link rel="prefetch" href="/blog/assets/js/13.78022a99.js"><link rel="prefetch" href="/blog/assets/js/14.9fdae95e.js"><link rel="prefetch" href="/blog/assets/js/15.e5c6ef2c.js"><link rel="prefetch" href="/blog/assets/js/16.28b084b8.js"><link rel="prefetch" href="/blog/assets/js/17.2d219f9f.js"><link rel="prefetch" href="/blog/assets/js/18.a8dab2a7.js"><link rel="prefetch" href="/blog/assets/js/19.23c153d1.js"><link rel="prefetch" href="/blog/assets/js/20.1b9ae2eb.js"><link rel="prefetch" href="/blog/assets/js/21.8b16be70.js"><link rel="prefetch" href="/blog/assets/js/22.64fa8d06.js"><link rel="prefetch" href="/blog/assets/js/23.4a788993.js"><link rel="prefetch" href="/blog/assets/js/24.3b3161c4.js"><link rel="prefetch" href="/blog/assets/js/25.b7d70e5f.js"><link rel="prefetch" href="/blog/assets/js/26.6cba8462.js"><link rel="prefetch" href="/blog/assets/js/27.a7d7c629.js"><link rel="prefetch" href="/blog/assets/js/3.c813663e.js"><link rel="prefetch" href="/blog/assets/js/4.4fd1cb07.js"><link rel="prefetch" href="/blog/assets/js/5.43aac7cf.js"><link rel="prefetch" href="/blog/assets/js/6.51eb595e.js"><link rel="prefetch" href="/blog/assets/js/9.92346863.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.57e4ead6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">김지훈 FE 블로그</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/guestbook/" class="nav-link">
+    방명록
+  </a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/guestbook/" class="nav-link">
+    방명록
+  </a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>history</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>web</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>html</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>css</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/css/what-bem.html" aria-current="page" class="active sidebar-link">BEM이란?</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/css/what-bem.html#block" class="sidebar-link">Block</a></li><li class="sidebar-sub-header"><a href="/blog/css/what-bem.html#element" class="sidebar-link">Element</a></li><li class="sidebar-sub-header"><a href="/blog/css/what-bem.html#modifier" class="sidebar-link">Modifier</a></li></ul></li><li><a href="/blog/css/what-css.html" class="sidebar-link">CSS란?</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>cooperate</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="bem이란"><a href="#bem이란" class="header-anchor">#</a> BEM이란?</h1> <p>BEM(Block, Element, Modifier)은 컴포넌트 기반 웹 개발 접근방식이다. UI를 독립적인 Block들로 나누는 방식으로, 복잡한 UI에서 쉽고 빠르게 인터페이스를 개발할 수 있고, 기존 코드를 재사용하기 편리하다.</p> <h2 id="block"><a href="#block" class="header-anchor">#</a> Block</h2> <p>블록은 재사용할 수 있는 기능적으로 독립적인 구성 요소이다. HTML에서 블록은 class 속성으로 표시된다.</p> <ul><li>블록 이름은 상태(어떻게 생겼는지 ㅡ red 혹은 big)가 아니라 목적(무엇인지 ㅡ menu 혹은 button)을 나타낸다.</li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;!-- 바른 예. `error`는 의미론적으로 사용되어짐 --&gt;
+&lt;div class=&quot;error&quot;&gt;&lt;/div&gt;
+
+&lt;!-- 틀린 예. 외관을 설명하고 있음 --&gt; 
+&lt;div class=&quot;red-text&quot;&gt;&lt;/div&gt;
+</code></pre></div><h2 id="element"><a href="#element" class="header-anchor">#</a> Element</h2> <p>엘리먼트는 별도로 쓸 수 없는 블록의 합성 부품이다.</p> <ul><li>엘리먼트 이름은 상태(어떤 유형, 어떻게 생겼는지 ㅡ red, big, etc.)가 아니라 목적(이게 무엇인지 ㅡ item, text, etc.)을 설명한다.</li> <li>엘리먼트의 전체 이름 구조는 block-name__element-name이다. 엘리먼트 이름은 언더바 두 개(__)로 블록 이름과 구분된다.</li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;!-- 바른 예. 전체 엘리먼트의 이름 구조는 다음 패턴을 따름.
+--&gt; 
+&lt;form class=&quot;search-form&quot;&gt;
+    &lt;div class=&quot;search-form__content&quot;&gt;
+        &lt;!-- `search-form` 블록의 `input` 요소 --&gt;
+        &lt;input class=&quot;search-form__input&quot;&gt;
+        &lt;!-- `search-form` 블록의 `button` 요소--&gt;
+        &lt;button class=&quot;search-form__button&quot;&gt;Search&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+
+&lt;!-- 틀린 예. 전체 엘리먼트의 이름 구조는 다음 패턴을 따르지 않음. --&gt; 
+&lt;form class=&quot;search-form&quot;&gt;
+    &lt;div class=&quot;search-form__content&quot;&gt;
+        &lt;!-- 권장사항: `search-form__input` or
+                    search-form__content-input` --&gt;
+        &lt;input class=&quot;search-form__content__input&quot;&gt;
+        &lt;!-- 권장사항: `search-form__button` or
+                   `search-form__content-button` --&gt;
+        &lt;button class=&quot;search-form__content__button&quot;&gt;Search&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+</code></pre></div><h2 id="modifier"><a href="#modifier" class="header-anchor">#</a> Modifier</h2> <p>모디파이어는 블록이나 엘리먼트의 모양, 상태 또는 동작을 정의하는 개체이다.</p> <ul><li>모디파이어 이름은 모양(어떤 크기, 어떤 테마 등 ㅡ size_s, theme_islands), 상태(어떻게 다른지 ㅡ disabled, focused) 및 동작(어떻게 동작하는가 또는 어떻게 사용자에게 반응하는가 ㅡ directions_left-top)을 설명한다.</li> <li>모디파이어 이름은 대시(-)로 블록 또는 엘리먼트 이름과 구분된다.</li> <li>모다파이어의 이름 구조는 다음 패턴을 따른다.
+<ul><li>block-name_modifier-name</li> <li>block-name__element-name_modifier-name</li></ul></li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;!-- `search-form` 블록에는 `focused` Boolean 모디파이어가 있습니다. --&gt; 
+&lt;form class=&quot;search-form search-form_focused&quot;&gt;
+    &lt;input class=&quot;search-form__input&quot;&gt;
+    &lt;!-- ` button` 요소에는 `disabled` Boolean 모디파이어가 있습니다. --&gt; 
+    &lt;button class=&quot;search-form__button search-form__button_disabled&quot;&gt;Search&lt;/button&gt;
+&lt;/form&gt;
+</code></pre></div><p>BEM을 사용함으로써 의미를 쉽게 파악하고, 블록 단위의 독립적인 구성을 통해 확장성 있게 개발할 수 있다.</p> <h3 id="참고문서"><a href="#참고문서" class="header-anchor">#</a> 참고문서</h3> <p>&quot;Quick start&quot; bem.info, https://en.bem.info/methodology/quick-start, accessed: 2022년 9월 1일</p> <div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/blog/html/why-use-index.html" class="prev">
+          HTML파일 이름으로 index.html가 쓰이는 이유
+        </a></span> <span class="next"><a href="/blog/css/what-css.html">
+          CSS란?
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.8ea581b6.js" defer></script><script src="/blog/assets/js/8.4fb3aecf.js" defer></script><script src="/blog/assets/js/1.45109c56.js" defer></script><script src="/blog/assets/js/12.5f82ed44.js" defer></script><script src="/blog/assets/js/7.7dd6a3c5.js" defer></script>
+  </body>
+</html>
